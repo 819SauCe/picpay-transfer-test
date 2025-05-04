@@ -1,0 +1,13 @@
+[package]
+name = "teste_picpay"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+axum = "0.7"
+tokio = { version = "1.38", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+uuid = "1.7"
+sqlx = { version = "0.7", features = ["postgres", "runtime-tokio", "macros", "bigdecimal", "uuid"] }
+dotenvy = "0.15"
+hyper = "0.14"
